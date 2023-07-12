@@ -8,6 +8,10 @@
 */
 
 function uniq(arr) {
+    const result = arr.filter((item, position) => {
+        return arr.indexOf(item) == position; // вернём уникальные элементы
+    });
+    return result;
     // Напишите код здесь
 }
 
