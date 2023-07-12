@@ -7,6 +7,9 @@
 */
 
 function capitalize(str) {
+    return str.replace(/(^|\s)\S/g, function(letter) { // \S - все символы без пробелов, ^ - в начале строки или \s - после пробела
+        return letter.toUpperCase()
+    });
     // Напишите код здесь
 }
 
