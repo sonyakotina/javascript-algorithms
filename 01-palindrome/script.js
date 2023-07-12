@@ -14,6 +14,12 @@
 */
 
 function palindrome(str) {
+    if (str.split("").reverse().join("").toLowerCase().replace(/[\s.,!]/g, '') == str.toLowerCase().replace(/[\s.,!]/g, '')) {
+        return true
+    }
+    else {
+        return false
+    }
     // Напишите код здесь
 }
 
@@ -22,6 +28,7 @@ function palindrome(str) {
 console.log(palindrome('топот')); // должно быть true
 console.log(palindrome('Saippuakivikauppias')); // true
 console.log(palindrome('привет')); // false
+console.log(palindrome('О, лета тело!')); // true
 
 /*
  * Бонус. Задача для любознательных. Пусть функция принимает на вход любую строку,
